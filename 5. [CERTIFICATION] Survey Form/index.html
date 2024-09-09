@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Niksviatkin Survey Form - Certification Project</h1>
+    <p id="description">Short Survey Form explanation</p>
+    <form id="survey-form" action="" method="post">
+        <fieldset>
+            <label for="name" id="name-label">Name: <input type="text" name="" id="name" placeholder="ex. Nikita Viatkin" required></label>
+            <label for="email" id="email-label">Email: <input type="email" name="" id="email" placeholder="ex. example@mail.com" required></label>
+            <label for="number" id="number-label">Number: <input type="number" name="" id="number" min="0" max="99" placeholder="ex. 9" required></label>
+        </fieldset>
+
+        <fieldset>
+            <label for="dropdown">
+                Do you like our product?
+                <select name="dropdown" id="dropdown">
+                    <option value="">Select one</option>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                    <option value="2">Do not know yet / Not decided</option>
+                </select>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>How do you know about our product?</legend>
+            <label for="freecodecamp"><input type="radio" name="referrer" id="freecodecamp" class="inline" value="freecodecamp"> freecodeCamp.org</label>
+            <label for="other"><input type="radio" name="referrer" id="other" class="inline" value="other"> Other</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>What do you like in our product?</legend>
+            <label for="product-like-style"><input type="checkbox" name="product-like" id="product-like-style" class="inline" value="style"> Style</label>
+            <label for="product-like-usability"><input type="checkbox" name="product-like" id="product-like-usability" class="inline" value="usability"> Usability</label>
+            <label for="product-like-functionality"><input type="checkbox" name="product-like" id="product-like-functionality" class="inline" value="functionality"> Functionality</label>
+            <label for="product-like-other"><input type="checkbox" name="product-like" id="product-like-other" class="inline" value="other"> Other</label>
+
+            <label for="product-like-other-info">
+                If you chose Other, please explain:
+                <textarea name="" id="product-like-other-info" cols="30" rows="10"></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" value="Submit form" id="submit">
+    </form>
+</body>
+</html>
